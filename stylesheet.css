@@ -1,0 +1,414 @@
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+.container {
+ top: 0;
+}
+
+.containerunter {
+   
+    padding:0px;
+    margin: 0px;
+    background-color: black;
+    height: 100vh;
+}
+
+section
+
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    scroll-snap-align: start;
+     
+}
+
+
+.titel {
+    top: 0;
+ 
+    position: fixed;
+
+  
+}
+
+
+
+.inhalt {
+
+    /* height: 90vh;*/
+    background-color: black;
+    width: 100vw;
+    margin-top: 40vh;
+   
+     
+ }
+ 
+ .inhaltpro {
+
+    /* height: 90vh;*/
+     background-color: black;
+     width: 100vw;
+     margin-top: 30vh;
+     z-index: 99;
+     position: absolute;
+ }
+ footer {
+
+    height: 20vh;
+    z-index: 99;
+}
+/*
+#platz {
+    height: 40vh;
+}*/
+
+/*TYPO*/
+h1 {
+    font-family: Arial;
+    font-size: 6em;
+    padding-top: 0em;
+    margin: 0em;
+    position: relative;
+    width: 90vw;
+    hyphens: auto;
+    
+}
+
+
+h2 {
+    font-family: Arial;
+    font-size: 6em;
+    padding-top: 0em;
+    margin: 0em;
+    display: inline;
+
+}
+
+
+.pnormal {
+    font-family: Arial;
+    font-size: 6em;
+    line-height: 1.3em;
+    color:white;
+    width: 90vw;
+    margin: 0em;
+
+}
+
+.pnormal:hover {
+    text-decoration: underline white;
+    font-style: italic;
+    cursor: pointer;
+    
+
+}
+
+.ptitel {
+    font-family: Arial;
+    font-size: 6em;
+    color:white;
+    margin: 0em;
+}
+
+
+
+.ptext {
+    font-family: Arial;
+    font-size: 6em;
+    padding: 0;
+    margin-left: 10vw;
+    color:white;
+    width: 90vw;
+  
+}
+
+
+.pzahl {
+    font-family: Arial;
+    font-size: 6em;
+    padding-top: 1em;
+    color:white;
+    width: 70vw;
+    margin: 0em;
+}
+
+
+.pfeil {
+    font-family: Arial;
+    font-size: 6em;
+    color:white;
+    margin: 0em;
+
+}
+
+.pfeil:hover {
+
+    cursor: pointer;
+
+}
+
+.klein {
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color: black;
+    display: inline;
+   max-width: 20vw;
+   
+}
+
+.kleinweiss {
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    color: white;
+    hyphens: auto;
+    width: 80vw;
+    margin-left: 10vw;
+    margin-bottom: 0;
+    display: inline;
+}
+
+.kleinzahl {
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    color: white;
+    hyphens: auto;
+    max-width: 80vw;
+    margin-left: 10vw;
+    margin-bottom: 5vh;
+    display: inline;
+    position: relative;
+}
+
+
+.kleinweisseinzug {
+
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    hyphens: auto;
+    width: 80vw;
+    position: relative;
+    margin-left: 25vw;
+    display: inline;
+}
+
+
+
+.verlinkung {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+a {
+    text-decoration: none;
+}
+
+
+#impressum {
+    display: inline;
+    margin-left: 60vw;
+}
+
+
+summary:hover {
+
+    cursor: pointer;
+}
+
+details > summary {
+    list-style: none;
+  }
+  details > summary::-webkit-details-marker {
+    display: none;
+  }
+/*
+
+.oben {
+    padding-top: 0em;
+    position: fixed;
+    top: 0em;
+    width: 50vh;
+    height: 20vh;
+background-color: black;
+}*/
+
+/*DECO*/
+
+.liniedick {
+
+    background-color: black;
+    border: 0em;
+    width: 98vw;
+    height: 0.4em;
+    margin-top: 0vh;
+    margin-bottom: 2vh;
+    position: relative;
+}
+
+
+ul { 
+    margin: 0;
+    list-style-type: none; }
+
+
+
+/*HOVERHIDE*/
+
+.hidetitel {
+    display: none;
+    z-index: 2;
+    position: relative;
+   
+
+}
+
+.hide {
+    display: none;
+    z-index: 2;
+    position: relative;
+    right: -70vw;
+    bottom: 20vh;
+
+}
+
+h1:hover + .hidetitel {
+    display: inline-flex;
+  
+  }
+
+
+
+
+.content {
+    position: relative;
+    padding-top: 0em;
+}
+  
+.content:hover + .hide {
+    display: inline-flex;
+   }
+
+
+
+
+
+.bild {
+    height: 300px;
+    position: relative;
+   
+    
+}
+
+.projektbild {
+
+    position: relative;
+    align-items: center;
+    width: 80vw;
+    padding-bottom: 5vh;
+}
+.projektbildkleiner {
+
+    position: relative;
+    align-items: center;
+    width: 40vw;
+    padding-bottom: 5vh;
+}
+
+
+
+
+.centrum { 
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+
+}
+
+  
+  
+
+
+
+  /*BESCHREIBUNGSHOVER*/
+
+  #avatar {
+      height: 300px;
+      z-index: 999;
+
+
+  }
+
+
+  .marquee-section {
+   position: relative;
+
+   width: 100vw;
+ 
+
+ 
+}
+
+w
+
+.marquee-section, .marquee-section * {
+    overflow: hidden;
+}
+
+.marquee {
+    white-space: nowrap;
+}
+
+.marquee-div:hover {
+    position: absolute;
+    animation: move-left-to-right linear 13s infinite;
+}
+
+ .unsichtbar:hover {
+ display: block;
+}
+
+
+/* use this one to move from left to right direction */
+@keyframes move-left-to-right {
+    from {
+        transform: translateX(-50%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* use this one to move from right to left direction */
+@keyframes move-right-to-left {
+    from {transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+
+
+.unsichtbar {
+    font-family: Arial;
+
+    color:white;
+    margin: 0em;
+
+display: none;
+
+
+}
+
+
+.ptitel:hover .unsichtbar {
+    display: inline;
+}
