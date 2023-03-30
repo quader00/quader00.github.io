@@ -386,14 +386,14 @@ w
     }
 }
 
-/* use this one to move from right to left direction */
+/* use this one to move from right to left direction 
 @keyframes move-right-to-left {
     from {transform: translateX(0);
     }
     to {
         transform: translateX(-50%);
     }
-}
+}*/
 
 
 
