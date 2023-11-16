@@ -6,6 +6,7 @@
     <title>quade</title>
     <link rel="stylesheet" href="stylesheet.css">
     <script src="app.js"></script>
+  
   </head>
   
   
@@ -14,19 +15,20 @@
 <div class="container">
    
    
-    <section class="titel">
-
-
-
-      <h1>Laura Quade</h1>
-      <div class="hidetitel"> <img id="avatar" src="sources/laura.png" style="position:absolute;" /></div>
-      <br>
-      <br>
-      <div class="marquee-section">
-        <div class="marquee-div">
-            <div class="marquee"><h2>Visuelle Gestaltungen. Informationsdesign. Konzepte und Ideen.</h2>
-    </div> </div> </div>
-     </section>
+  <section class="titel">
+    <details>
+      <Summary><h1 id="moveInhalt">Laura Quade</h1></Summary>
+      <div class="aboutinfos"><p class="kleinschwarz"><br> Moin, here is Laura. I am a visual communication designer with the focus on information design.<br><br> <span class="einzug">Education</span></Education><br> since 2023  Universität der Künst Berlin, Master in Information Design <br> 2018–2023  Muthesius University of Fine Artes and Design, Bachelor in Communication Design with spezialistaion in Informationdesign <br>2020  HDK Basel, Exchange Semester</p></div>
+    </details>
+    <div class="hidetitel"> <img id="avatar" src="sources/laura.png" style="position:absolute;" /></div>
+    <br>
+    <br>
+    <div class="marquee-section">
+      <div class="marquee-div">
+        <div class="marquee"><h2>Visual Communication. Information Design. Concepts and Ideas</h2></div>
+      </div>
+    </div>
+  </section>
 
 
 
@@ -91,4 +93,24 @@
 
 
   </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var inhaltSection = document.querySelector('.inhalt');
+      var moveInhaltButton = document.getElementById('moveInhalt');
+      
+      var isMovedDown = false;
+
+      moveInhaltButton.addEventListener('click', function() {
+        // Toggle the transformation
+        isMovedDown = !isMovedDown;
+
+        if (isMovedDown) {
+          inhaltSection.style.transform = 'translateY(50vh)';
+        } else {
+          inhaltSection.style.transform = 'translateY(0)';
+        }
+      });
+    });
+  </script>
 </html>

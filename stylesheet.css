@@ -30,12 +30,17 @@ section
     top: 0;
  
     position: fixed;
+    
 
   
 }
 
+.aboutinfos {
 
-
+    height: 50vh;
+    padding-left: 10vh;
+    padding-right: 25vh;
+}
 .inhalt {
 
     /* height: 90vh;*/
@@ -125,6 +130,16 @@ h2 {
   
 }
 
+.ptextschwarz {
+    font-family: Arial;
+    font-size: 6em;
+    padding: 0;
+    margin-left: 10vw;
+    color: black;
+    width: 90vw;
+  
+}
+
 
 .pzahl {
     font-family: Arial;
@@ -158,6 +173,18 @@ h2 {
     display: inline;
    max-width: 20vw;
    
+}
+
+.kleinschwarz {
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    color: black;
+    hyphens: auto;
+    width: 80vw;
+    margin-left: 10vw;
+    margin-bottom: 0;
+    display: inline;
 }
 
 .kleinweiss {
@@ -195,6 +222,12 @@ h2 {
     position: relative;
     margin-left: 25vw;
     display: inline;
+}
+
+.einzug {
+    position: relative;
+    margin-left: 25vw;
+
 }
 
 
